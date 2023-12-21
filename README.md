@@ -196,6 +196,7 @@ buttons.forEach((button) => {
 });
 
 ```
+
 ## OUTPUT:
 ![Alt text](<calculator/calcapp/static/Screenshot 2023-12-21 184232.png>)
 ## RESULT:
