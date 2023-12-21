@@ -1,0 +1,78 @@
+body{
+  width:95%;
+  height:90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h3{
+  color: #fff;
+}
+
+.card-title {
+  font-size: 22px;
+}
+
+p, a {
+  font-size: 1rem;
+}
+
+a {
+  color: #4d4ae8;
+  text-decoration: none;
+}
+.shape {
+  position: absolute;
+  width: 150px;
+  top: .5rem;
+  left: .5rem;
+}
+.calculator{
+  background: #3a4452;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  height: auto;
+	backdrop-filter: blur(50%);
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgb(0, 0, 0); /* Soft, diffused shadow */
+  backdrop-filter: blur(4px); /* Creates the blurry, frosted glass effect */
+  -webkit-backdrop-filter: blur(4px); /* For Safari */
+  padding: 20px;
+}
+.calculator form input{
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgb(0, 0, 0),5px 5px 15px rgb(0, 0, 0);
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+form .display{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+form .display input{
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+form input.equal{
+  width: 145px;
+}
+form input.operator{
+  color:#45c8f7;
+}
