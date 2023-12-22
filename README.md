@@ -1,5 +1,5 @@
 # Ex.08 Design of a Standard Calculator
-## Date:
+## Date:22/12/2023
 
 ## AIM:
 To design a web application for a standard calculator with minimum five operations.
@@ -29,15 +29,15 @@ Publish the website in the given URL.
 calculatordev.html:
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Calculator</title>
+ <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body style= "background-image: url('benjamin-voros-phIFdC6lA4E-unsplash.jpg')" align="center">
+<body style= "background-image: url('peakpx (1).jpg')" align="center">
     
     <div class="card">
         
@@ -51,7 +51,7 @@ calculatordev.html:
           </div>
           <div>
             <input type="button" value="AC" onclick="display.value = '' " class="operator">
-            <input type="button" value="DE" onclick="display.value =  display.value.toString().slice(0,-1)" class="operator">
+            <input type="button" value="DEL" onclick="display.value =  display.value.toString().slice(0,-1)" class="operator">
             <input type="button" value="." onclick="display.value += '.' " class="operator">
             <input type="button" value="/" onclick="display.value += '/' " class="operator">
           </div>
@@ -71,19 +71,20 @@ calculatordev.html:
             <input type="button" value="1" onclick="display.value += '1' ">
             <input type="button" value="2" onclick="display.value += '2' ">
             <input type="button" value="3" onclick="display.value += '3' ">
-            <input type="button" value="+" onclick="display.value += '+' " class="operator">
+            <input type="button" value="+" onclick="display.value += '+' "class="operator">
           </div>
           <div>
             <input type="button" value="%" onclick="display.value +='%' " class="operator">
             <input type="button" value="0" onclick="display.value += '0' ">
-            <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
+            <input type="button" value="=" onclick="display.value = eval(display.value)"class="equal operator">
           </div>
         </form>
       </div>
     </div>
     
+    <script src="script.js"></script>
 </body>
-</html
+</html>
 ```
 ```
 style.css:
@@ -195,8 +196,7 @@ buttons.forEach((button) => {
 });
 
 ```
-
 ## OUTPUT:
-![Alt text](<calculator/calcapp/static/Screenshot 2023-12-21 184232.png>)
+![Alt text](<calculator/calcapp/static/Screenshot 2023-12-22 134645.png>)
 ## RESULT:
 The program for designing a standard calculator using HTML and CSS is executed successfully.

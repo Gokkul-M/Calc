@@ -1,14 +1,17 @@
-
-
-const display = document.querySelector(".display");
-const buttons = document.querySelectorAll("button");
+const display = document.querySelector(".display input"); // Select the input element
+const buttons = document.querySelectorAll(".buttons button");
 const specialChars = ["%", "*", "/", "-", "+", "="];
 let output = "";
 
 const calculate = (btnValue) => {
   display.focus();
+
   if (btnValue === "=" && output !== "") {
-    output = eval(output.replace("%", "/100"));
+    try {
+      output = eval(output.replace("%", "/100")); // Use try-catch for eval
+    } catch (error) {
+      output = "Error"; // Handle potential errors from eval
+    }
   } else if (btnValue === "AC") {
     output = "";
   } else if (btnValue === "DEL") {
@@ -17,9 +20,13 @@ const calculate = (btnValue) => {
     if (output === "" && specialChars.includes(btnValue)) return;
     output += btnValue;
   }
+
   display.value = output;
 };
 
 buttons.forEach((button) => {
-  button.addEventListener("click", (e) => calculate(e.target.dataset.value));
+  button.addEventListener("click", (e) => {
+    const btnValue = e.target.dataset.value; // Get button value from dataset
+    calculate(btnValue);
+  });
 });
